@@ -1,5 +1,7 @@
 **How to Setup Amazon Dash buttons to work with IFTTT using .iso file**
 
+Project done Summer 2017 at MIT Little Devices Lab with Austin Edelman for José Gómez-Márquez.
+
 
 What you will need:
 * Raspberry Pi 3 Model B
@@ -15,7 +17,7 @@ Instructions:
 1. Format SD card to FAT or FAT32 format
 2. Burn .iso file to the Micro SD card. The .iso image can be downloaded here:
 Amazon Dash .iso Image (https://drive.google.com/open?id=0B68EGwJQB1HqY1Y2VUw0UmZfZ1E)
-A good burning program for Mac OS is Etcher: https://etcher.io. Don’t worry if the validation fails. For Windows, use Win32 Disk Imager (https://sourceforge.net/projects/win32diskimager/).
+A good burning program for Mac OS is Etcher: (https://etcher.io). Don’t worry if the validation fails. For Windows, use Win32 Disk Imager (https://sourceforge.net/projects/win32diskimager/).
 3. Insert Micro SD card into Raspberry Pi.
 4. Connect Mouse and Keyboard to USB ports in Raspberry Pi and connect to Monitor with HDMI cord
 5. Give Raspberry Pi power with Micro USB cable
@@ -24,14 +26,18 @@ A good burning program for Mac OS is Etcher: https://etcher.io. Don’t worry if
 Dash Button Set Up Video (https://drive.google.com/open?id=0B68EGwJQB1HqU1lIdmZyS2FFOFk)
 8. Open terminal
 9. Type the following:
+```
 cd dasher
 script/find_button
+```
 	
 
 10. Now press the button on your dash button. When this is done a device either titled “unknown manufacturer” or “Amazon Technologies Inc” will appear. Copy the Mac address of this device. The Mac address will by a set of numbers and letters formatted like this: XX:XX:XX:XX
 11. Once you have the Mac address, press “control” and “C”
 12. Now type the following:
+```
 sudo nano config/config.json
+```
 	
 
 13.  Each of the sections in the file is a dash button. Change the “address” to the Mac address you just found.
