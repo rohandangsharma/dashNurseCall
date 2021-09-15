@@ -1,4 +1,4 @@
-How to Setup Amazon Dash buttons to work with IFTTT using .iso file
+**How to Setup Amazon Dash buttons to work with IFTTT using .iso file**
 
 
 What you will need:
@@ -14,14 +14,14 @@ What you will need:
 Instructions:
 1. Format SD card to FAT or FAT32 format
 2. Burn .iso file to the Micro SD card. The .iso image can be downloaded here:
-Amazon Dash .iso Image
-A good burning program for Mac OS is Etcher. Don’t worry if the validation fails. For Windows, use Win32 Disk Imager.
+Amazon Dash .iso Image (https://drive.google.com/open?id=0B68EGwJQB1HqY1Y2VUw0UmZfZ1E)
+A good burning program for Mac OS is Etcher: https://etcher.io. Don’t worry if the validation fails. For Windows, use Win32 Disk Imager (https://sourceforge.net/projects/win32diskimager/).
 3. Insert Micro SD card into Raspberry Pi.
 4. Connect Mouse and Keyboard to USB ports in Raspberry Pi and connect to Monitor with HDMI cord
 5. Give Raspberry Pi power with Micro USB cable
 6. Connect to local wireless network by clicking wifi icon in top right corner of screen.
 7. Download the Amazon App on Android or iOS. Then, set up your dash button on the same wifi network as the Raspberry Pi. An instructional video can be found here:
-Dash Button Set Up Video
+Dash Button Set Up Video (https://drive.google.com/open?id=0B68EGwJQB1HqU1lIdmZyS2FFOFk)
 8. Open terminal
 9. Type the following:
 cd dasher
@@ -35,7 +35,7 @@ sudo nano config/config.json
 	
 
 13.  Each of the sections in the file is a dash button. Change the “address” to the Mac address you just found.
-14. Now use IFTTT to make an applet that takes in a Webhook and outputs a text message, email, or another way of notifying that a button was pressed. Remember or write down what you name your “trigger”
+14. Now use IFTTT (https://ifttt.com/) to make an applet that takes in a Webhook and outputs a text message, email, or another way of notifying that a button was pressed. Remember or write down what you name your “trigger”
 15. Then change the “url” part of the config.json file to reference your new applet. Format the url like this:
    1. In IFTT to go “search” and search for “webhook”. Once in webhook, click “settings”. There should be a url. Copy everything after the “https://maker.ifttt.com/use/”. This is called the maker key
    2. Go to the config.json file and replace the url with: “https://maker.ifttt.com/trigger/youreventname/with/key/yourmakerkey”
