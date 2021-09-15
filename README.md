@@ -1,6 +1,9 @@
 **How to Setup Amazon Dash buttons to work with IFTTT using .iso file**
 
-Project done Summer 2017 at MIT Little Devices Lab with Austin Edelman for José Gómez-Márquez.
+A project done Summer 2017 at the MIT Little Devices Lab by Rohan Sharma and Austin Edelman for José Gómez-Márquez.
+Created an inexpensive Nurse-Call System for 3rd world and places with limited resources.
+Presented to the University of Texas Medical Center
+Slide deck can be found here: https://docs.google.com/presentation/d/1AHs7ojxzqkSCklehYVD96YiWl206fqcLmCP8ksIoK_A/edit?usp=sharing
 
 
 What you will need:
@@ -35,7 +38,7 @@ script/find_button
 10. Now press the button on your dash button. When this is done a device either titled “unknown manufacturer” or “Amazon Technologies Inc” will appear. Copy the Mac address of this device. The Mac address will by a set of numbers and letters formatted like this: XX:XX:XX:XX
 11. Once you have the Mac address, press “control” and “C”
 12. Now type the following:
-```
+```Fi
 sudo nano config/config.json
 ```
 	
