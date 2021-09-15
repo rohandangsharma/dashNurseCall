@@ -1,10 +1,12 @@
-**How to Setup Amazon Dash buttons to work with IFTTT using .iso file**
+**Using Amazon Dash Buttons and Raspberry Pi to Create Inexpensive Solutions for Labs and Hospitals**
 
-A project done Summer 2017 at the MIT Little Devices Lab by Rohan Sharma and Austin Edelman for José Gómez-Márquez.
-Created an inexpensive Nurse-Call System for 3rd world and places with limited resources.
-Presented to the University of Texas Medical Center
-Slide deck can be found here: https://docs.google.com/presentation/d/1AHs7ojxzqkSCklehYVD96YiWl206fqcLmCP8ksIoK_A/edit?usp=sharing
 
+* A project done Summer 2017 at the MIT Little Devices Lab by Rohan Sharma and Austin Edelman for José Gómez-Márquez.
+* Created an inexpensive Nurse-Call System for 3rd world and places with limited resources.
+* Presented to the University of Texas Medical Center.
+* Slide deck can be found here: https://docs.google.com/presentation/d/1AHs7ojxzqkSCklehYVD96YiWl206fqcLmCP8ksIoK_A/edit?usp=sharing
+
+**How to Setup Amazon Dash buttons to work with IFTTT using .iso file:**
 
 What you will need:
 * Raspberry Pi 3 Model B
